@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HIMSTOREE | Link Bio</title>
+
+<!-- Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<!-- Preview saat di share -->
+<meta property="og:title" content="HIMSTOREE | Link Bio">
+<meta property="og:description" content="Fast Respon ⚡">
+<meta property="og:image" content="https://ik.imagekit.io/qomt9z7qd/quality_restoration_20260219084436714.jpeg">
+
+<style>
+body{
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg,#001f3f,#003566,#00509d);
+  color: white;
+  text-align: center;
+  padding: 40px 15px;
+  margin:0;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn{
+  from{opacity:0;}
+  to{opacity:1;}
+}
+
+.avatar{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  border:3px solid #4fd1ff;
+  box-shadow:0 0 15px #4fd1ff;
+  margin-bottom:15px;
+  object-fit:cover;
+}
+
+h1{
+  margin:5px 0;
+  font-size:2rem;
+}
+
+p{
+  color:#cce7ff;
+  margin-bottom:25px;
+}
+
+.btn{
+  display:block;
+  max-width:320px;
+  margin:12px auto;
+  padding:14px;
+  background: linear-gradient(90deg,#00c6ff,#0072ff);
+  color:white;
+  text-decoration:none;
+  border-radius:25px;
+  font-size:1rem;
+  font-weight:600;
+  box-shadow:0 0 12px #00c6ff;
+  transition:0.3s;
+}
+
+.btn:hover{
+  transform:scale(1.05);
+  box-shadow:0 0 20px #66e0ff;
+}
+
+.quote{
+  margin-top:25px;
+  font-style:italic;
+  color:#b3dbff;
+}
+
+.footer{
+  margin-top:35px;
+  font-size:0.8rem;
+  color:#99ccff;
+}
+
+#jam{
+  margin-top:12px;
+  color:#80dfff;
+}
+</style>
+</head>
+
+<body>
+
+<img src="https://ik.imagekit.io/qomt9z7qd/quality_restoration_20260219084436714.jpeg" class="avatar">
+
+<h1>HIMSTOREE</h1>
+<p>@HIM_STECUU</p>
+
+<a class="btn" href="https://whatsapp.com/channel/0029VbCbBi6FSAt9XjbFhx1v" target="_blank">
+✦ SALURAN TESTI
+</a>
+
+<a class="btn" href="https://www.instagram.com/a4m_rk" target="_blank">
+✦ INSTAGRAM ADMIN
+</a>
+
+<a class="btn" href="https://wa.me/6283865572516" target="_blank">
+✦ WHATSAPP ADMIN
+</a>
+
+<p class="quote">
+" Fast Respon ⚡"
+</p>
+
+<p id="jam"></p>
+
+<div class="footer">
+Dibuat by RohimSigma — Link Bio
+</div>
+
+<script>
+function updateJam(){
+  const now = new Date();
+  document.getElementById("jam").innerHTML =
+  "Online: " + now.toLocaleTimeString();
+}
+setInterval(updateJam,1000);
+updateJam();
+</script>
+
+</body>
+</html>
